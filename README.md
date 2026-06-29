@@ -1,9 +1,9 @@
-# ⚡ TaskFlow — Full-Stack Productivity Platform
-### React + Node.js + **MySQL (Sequelize)**
+ TaskFlow — Full-Stack Productivity Platform
+ React + Node.js + **MySQL (Sequelize)**
 
 ---
 
-## 🚀 Tech Stack
+  Tech Stack
 
 | Layer      | Technology                          |
 |------------|-------------------------------------|
@@ -16,7 +16,7 @@
 
 ---
 
-## ✅ Features
+ Features
 
 | Feature              | Description                                     |
 |---------------------|-------------------------------------------------|
@@ -34,7 +34,7 @@
 
 ---
 
-## 📁 Project Structure
+  Project Structure
 
 ```
 taskflow/
@@ -63,19 +63,19 @@ taskflow/
 
 ---
 
-## ⚙️ Setup
+ Setup
 
 ### Prerequisites
 - Node.js v18+
 - MySQL 8 running locally **or** a hosted MySQL (Railway, PlanetScale, ClearDB)
 
-### Step 1 — Create MySQL database
+ Step 1 — Create MySQL database
 
 ```sql
 CREATE DATABASE taskflow CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-### Step 2 — Configure backend
+ Step 2 — Configure backend
 
 ```bash
 cd backend
@@ -97,14 +97,14 @@ FRONTEND_URL=http://localhost:3000
 
 > **Cloud MySQL?** Just set `DATABASE_URL=mysql://user:pass@host:3306/taskflow` instead.
 
-### Step 3 — Test DB connection
+ Step 3 — Test DB connection
 
 ```bash
 node src/config/testConnection.js
-# ✅ MySQL connection SUCCESS
+#  MySQL connection SUCCESS
 ```
 
-### Step 4 — Install & run
+ Step 4 — Install & run
 
 ```bash
 # Terminal 1 — Backend
@@ -124,7 +124,7 @@ Open **http://localhost:3000** → Register → Done! 🎉
 
 ---
 
-## 🗄️ MySQL Tables (auto-created)
+ MySQL Tables (auto-created)
 
 | Table           | Description                              |
 |----------------|------------------------------------------|
@@ -160,23 +160,23 @@ Open **http://localhost:3000** → Register → Done! 🎉
 
 ---
 
-## 🚀 Deployment
+ Deployment
 
-### Backend → Railway / Render
+ Backend → Railway / Render
 1. Set env vars in dashboard
 2. Start command: `npm start`
 
-### Frontend → Vercel / Netlify
+ Frontend → Vercel / Netlify
 1. Set `REACT_APP_API_URL=https://your-backend.com/api`
 2. Build: `npm run build` → publish `build/`
 
-### Database → Railway MySQL / PlanetScale
+ Database → Railway MySQL / PlanetScale
 1. Create free MySQL instance
 2. Copy connection string → set as `DATABASE_URL` in backend env
 
 ---
 
-## 📝 Resume Points
+ Resume Points
 
 - Built full-stack MERN→MySQL application with JWT auth and role-based access
 - Designed relational MySQL schema with 6 tables, foreign keys, and indexes
